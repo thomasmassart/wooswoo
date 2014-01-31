@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" ng-app="SushiBar">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+		<meta name="format-detection" content="telephone=no">
+		<title>My AngularJS App</title>
+		<link rel="stylesheet" href="css/final.css"/>
+		<script type="text/javascript" src="final.min.js"></script>
+		<script type="text/javascript" src="templates.js"></script>
+	</head>
+	<body ng-controller="AppCtrl">
+		<div id="content">
+			<div class="page-swipe" page-swipe="pageIndex" scrollend="scrollEnd">
+				<div id="pageScroller">
+					<div class="page">
+						<div ng-include="'views/directory.html'"></div>
+					</div>
+					<!-- <div class="page">
+						<div ng-include="'views/contact.html'"></div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<div popup-gui></div>
+	</body>
+</html>

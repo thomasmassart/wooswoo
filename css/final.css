@@ -301,7 +301,7 @@
 /* SMART INPUT */
 
 .smart-input{
-	padding: 5px;
+	padding: 0px;
 }
 
 .smart-input .smart-input-icon{
@@ -310,6 +310,7 @@
 	width: 30px;
 	text-align: center;
 	color: #a6a6a6;
+	padding: 4px;
 }
 
 .smart-input .smart-input-erase{
@@ -318,11 +319,13 @@
 	width: 30px;
 	text-align: center;
 	color: #a6a6a6;
+	padding: 4px;
 }
 
 .smart-input .smart-input-input{
 	display: block;
 	padding: 0;
+	padding: 5px;
 }
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome

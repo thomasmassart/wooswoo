@@ -16,7 +16,7 @@ app.run(['$templateCache', function($templateCache){  'use strict';
 
 
   $templateCache.put('views/directives/smart-input.html',
-    "<div class=smart-input ng-click=focus()><a class=smart-input-icon><i class=\"fa fa-search\"></i></a> <a class=smart-input-erase ng-click=erase() ng-show=isFilled()><i class=\"fa fa-times-circle\"></i></a><input class=smart-input-input ng-model=searchTextInput placeholder=Search></div>"
+    "<div class=smart-input ng-click=focus()><a class=smart-input-icon><i class=\"fa fa-search\"></i></a> <a class=smart-input-erase ng-click=erase() ng-show=isFilled()><i class=\"fa fa-times-circle\"></i></a><input class=smart-input-input placeholder=Search></div>"
   );
 
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
 xmlns:gap = "http://phonegap.com/ns/1.0"
-id="be.movify.shopiready.sushiline"
+id="com.starwood.wooswoo"
 version="1.0">
-	<name>SUSHILINE</name>
-	<description>Commandez vos sushi online</description>
+	<name>WOOSWOO</name>
+	<description>Find who you want</description>
 	<author email="thomas.massart@starwoodhotels.com" href="#">Developer Team</author>
 	<content src="index.html" />
 	<access origin="*" />

@@ -5,6 +5,11 @@ app.run(['$templateCache', function($templateCache){  'use strict';
   );
 
 
+  $templateCache.put('views/directives/infinite-scroll.html',
+    "<div id=wrapper><div id=scroller><ul class=listview><li ng-transclude=\"\" last-repeat=\"\"></li></ul></div></div>"
+  );
+
+
   $templateCache.put('views/directives/ng-iscroll-list.html',
     "<div><div id=scroller><ul class=listview><li ng-transclude=\"\" last-repeat=false></li></ul><div class=gap></div></div></div>"
   );
@@ -21,6 +26,6 @@ app.run(['$templateCache', function($templateCache){  'use strict';
 
 
   $templateCache.put('views/directory.html',
-    "<div id=directory ng-controller=DirectoryCtrl><div class=space-full><form><div class=form-group><div class=row><div smart-input=\"\" ng-model=searchTextInput></div></div></div></form></div><div ng-list-scroll=scrollEnd end-reached=endReached><div id=scroller><ul class=listview><li ng-repeat=\"contact in directory | orderBy:'L' | filter:searchText | limitTo:listSize\" last-repeat=\"\"><div class=row><div class=col-right-icon><a href=tel:{{contact.T}} class=square><div class=phone><i class=\"fa fa-22px fa-phone\"></i></div></a> <a href=tel:{{contact.T}} class=square><div class=mail><i class=\"fa fa-22px fa-envelope-o\"></i></div></a></div><div class=\"col100 has-right-icon\"><a ng-click=displayContact(contact.I)><div class=name>{{contact.F}} {{contact.L}}</div><div class=job>{{contact.J}}</div><div class=place>{{contact.P}}</div><div class=phone>Tel: {{contact.T}}</div></a></div></div></li></ul><div class=gap></div></div></div></div>"
+    "<div id=directory ng-controller=DirectoryCtrl><div class=space-full><form><div class=form-group><div class=row><div smart-input=\"\" ng-model=searchTextInput></div></div></div></form></div><div infinite-scroll=\"contact in directory\"><div class=row><div class=col-right-icon><a href=tel:{{contact.content.T}} class=square><div class=phone><i class=\"fa fa-22px fa-phone\"></i></div></a> <a href=tel:{{contact.content.T}} class=square><div class=mail><i class=\"fa fa-22px fa-envelope-o\"></i></div></a></div><div class=\"col100 has-right-icon\"><a ng-click=displayContact(contact.I)><div class=name>{{contact.content.F}} {{contact.content.L}}</div><div class=job>{{contact.content.J}}</div><div class=place>{{contact.content.P}}</div><div class=phone>Tel: {{contact.content.T}}</div></a></div></div></div></div>"
   );
 }]);

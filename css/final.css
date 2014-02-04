@@ -302,6 +302,7 @@
 
 .smart-input {
 	padding: 0px;
+	font-size: 14px;
 }
 
 .smart-input .smart-input-icon {
@@ -310,7 +311,7 @@
 	width: 30px;
 	text-align: center;
 	color: #a6a6a6;
-	padding: 4px;
+	padding: 2px;
 }
 
 .smart-input .smart-input-erase {
@@ -319,13 +320,13 @@
 	width: 30px;
 	text-align: center;
 	color: #a6a6a6;
-	padding: 4px;
+	padding: 2px;
 }
 
 .smart-input .smart-input-input {
 	display: block;
 	padding: 0;
-	padding: 5px;
+	padding: 3px;
 }
 
 /* INFINITE SCROLL */
@@ -2197,7 +2198,7 @@ input[type=submit]{
 /*-------------------- Others -------------------*/
 
 .space-full {
-	padding: 8px 12px;
+	padding: 5px 12px;
 }
 
 .space-hz {

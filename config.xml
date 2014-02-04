@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 xmlns:gap = "http://phonegap.com/ns/1.0"
 id="com.starwood.wooswoo"
-version="1.0">
+version="1.1">
 	<name>WOOSWOO</name>
 	<description>Find who you want</description>
 	<author email="thomas.massart@starwoodhotels.com" href="#">Developer Team</author>
